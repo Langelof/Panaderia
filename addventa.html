@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Añadir Producto</title>
+    <title>Ventas</title>
     <style>
         body {
             background-image: url('img/panaderiafondo1.jpg');
@@ -41,10 +41,10 @@
             cursor: pointer;
         }
         .container {
-            max-width: 60%;
+            max-width: 90%;
             max-height: 90%;
             padding: 16px;
-            margin-top: 100px; 
+            margin-top: 60px; 
             background-color: #eccf8dc5;
             border-radius: 12px;
             box-shadow: 0 0 40px rgb(0, 0, 0);
@@ -57,7 +57,7 @@
             background-color: rgba(255, 255, 255, 0.404);
             color: black;
             padding: 8px 10px;
-            margin-top: 2%;
+            margin-top: 5%;
             width: 100%;
             border-radius: 20px;
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
@@ -93,15 +93,6 @@
             background-color: #fff9e7;
             margin-bottom: 20px;
         }
-        .inputdir{
-            border-radius: 8px;
-            width: 47.8%;
-            height: 25px;
-            border-color: lightgray;
-            border-width: 0.02cap;
-            background-color: #fff9e7;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
@@ -116,27 +107,23 @@
             <a href="clientes.html">Clientes </a>
             <a href="ventas.html">Ventas </a>
         </div>
-    </header> 
+    </header>  
     <div class="container">
-        <a href="proveedor.html">X Cancelar</a>
-        <h1>Añadir Proveedor</h1>
-        <form action="proveedor.php" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="paginaweb">Página web:</label>
-                <input type="text" id="paginaweb" name="paginaweb">
-                <label for="telefono">Teléfono:</label>
-                <input type="text" id="telefono" name="telefono" required>
-                <label for="telefono2">Teléfono 2 (opcional):</label>
-                <input type="text" id="telefono2" name="telefono2">
-                <label for="direccion">Dirección:</label><br>
-                <input class="inputdir" type="text" placeholder="Calle" id="calle" name="calle" size="10">
-                <input class="inputdir" type="number" placeholder="Número" id="numero" name="numero" size="5">
-                <input class="inputdir" type="text" placeholder="Comunidad" id="comunidad" name="comunidad" size="10">
-                <input class="inputdir" type="text" placeholder="Ciudad" id="ciudad" name="ciudad" size="10">
-            <button type="submit">Añadir proveedor</button>
-          </form>
-          
+        <a href="ventas.html">X Cancelar</a>
+        <h1>Registro de ventas</h1>
+        <form action="ventas.php" method="post">
+            <label for="id_venta">No.Venta:</label><br>
+            <input type="text" id="id_venta name="id_venta><br>
+            <label for="fecha_venta">Fecha de Venta:</label><br>
+            <input type="text" id="fecha_venta" name="fecha_venta><br>
+            <label for="monto_inicial_venta">Monto inicial:</label><br>
+            <input type="text" id="monto_inicial_venta name="monto_inicial_venta><br>
+            <label for="descuento_venta">Descuento:</label><br>
+            <input type="text" id="descuento_venta name="descuento_venta><br>
+            <label for="rut_cliente">ID Cliente:</label><br>
+            <input type="text" id="rut_cliente name="rut_cliente"><br>
+            <button type="submit">Registrar Venta</button>
+        </form>
     </div>
 </body>
 </html>
